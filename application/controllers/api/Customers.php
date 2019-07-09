@@ -102,7 +102,7 @@ class Customers extends REST_Controller
      */
     function edit_put()
     {
-        //TODO $this->put() doesn't work for form data
+        //$this->put() only works for form data x-www-form-urlencoded
         $firstname = $this->put('firstname');
         $surname = $this->put('surname');
         $email = $this->put('email');
